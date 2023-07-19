@@ -19,7 +19,7 @@
 }
 
 
-.menu a:hover{
+.menu a:hover {
   border-bottom: #fff solid 2px;
 }
 
@@ -28,7 +28,7 @@
   font-weight: 900
 }
 
-.botao{
+.botao {
   border: #fff solid 1px;
   background: none;
   padding: 12px 20px;
@@ -37,27 +37,29 @@
   border-radius: 4px;
 }
 
-.botao:hover{
+.botao:hover {
   background: #fff;
   color: #000;
   transition: .3s;
 }
 
 
-@media(max-width:1000px){
-  .logo{
-    font-size: 1.2rem;
+@media(max-width:1000px) {
+  .logo {
+    font-size: 1.6rem;
   }
-  .menu{
+
+  .menu {
     display: none;
   }
-  .botao{
+
+  .botao {
     display: none;
   }
 }
 
-@media(min-width:1000px){
-  button{
+@media(min-width:1000px) {
+  .header span {
     display: none;
   }
 }
