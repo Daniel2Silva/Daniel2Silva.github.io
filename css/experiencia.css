@@ -1,0 +1,62 @@
+.experiencia{
+    margin: 10px;
+    padding: 1px 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #090909;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    border-radius: 5px;
+    border: #101010 2px solid;
+    
+}
+
+.experiencia p{
+    font-size: 1rem;
+    padding-bottom: 30px;
+    color: #c7c7c7;
+
+}
+
+.experiencia h3{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.tech{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.tech li{
+    font-size: 1rem;
+    background: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    color: #101010;
+}
+
+
+.nivel{
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+.exp{
+    backdrop-filter: blur(4px);
+}
+
+.titulo{
+    font-size: 4rem;
+    padding: 40px;
+    text-align: center;
+}
+
+.n{
+    padding-left: 15px;
+}
+
