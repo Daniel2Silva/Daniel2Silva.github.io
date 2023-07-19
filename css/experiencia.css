@@ -60,3 +60,14 @@
     padding-left: 15px;
 }
 
+@media(max-width:600px){
+    .experiencia{
+        grid-template-columns: 1fr;
+    }
+    .n{
+        margin-left: 55px;
+    }
+    .titulo{
+        font-size: 3rem;
+    }
+}
