@@ -29,6 +29,7 @@
 
 @media(max-width:500px) {
     .introducao h1 {
+        margin-top: -50px;
         text-align: left;
         text-align: center;
         font-size: 3rem;
