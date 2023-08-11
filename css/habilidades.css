@@ -39,7 +39,7 @@
 
 }
 
-.info-mobile{
+.info-mobile {
     display: none;
     text-align: center;
     padding-bottom: 30px;
@@ -93,7 +93,8 @@
     .informacoes p {
         font-size: 1rem;
     }
-    .info-mobile{
+
+    .info-mobile {
         display: block;
     }
 }
@@ -112,16 +113,18 @@
     }
 
 
-.info-mobile{
-    display: none;
-}
+    .info-mobile {
+        display: none;
+    }
 
 
 
     .hb-grid {
-        margin: 0;
-        overflow-y: scroll;
-        gap: 20px;
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        float: left;
+        position: relative;
         padding-left: 200px;
         padding-right: 10px;
     }
@@ -134,7 +137,7 @@
         max-width: fit-content;
     }
 
-    .info-mobile{
+    .info-mobile {
         display: block;
     }
 }
@@ -150,14 +153,15 @@
     animation: show .6s forwards;
 }
 
-@keyframes show{
-    from{
+@keyframes show {
+    from {
         opacity: 0;
-        transform: translate3d( -30px,0,0);
+        transform: translate3d(-30px, 0, 0);
     }
-    to{
+
+    to {
         opacity: 1;
-        transform: translate3d( 0,0,0);
+        transform: translate3d(0, 0, 0);
     }
 
 }
