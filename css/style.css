@@ -1,4 +1,6 @@
-@import url(global.css);
-@import url(header.css);
-@import url(main.css);
-@import url(experiencia.css);
+@import url(./global.css);
+@import url(./header.css);
+@import url(./main.css);
+@import url(./experiencia.css);
+@import url(./sobremim.css);
+@import url(./habilidades.css);

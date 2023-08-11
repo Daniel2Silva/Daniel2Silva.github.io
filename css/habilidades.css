@@ -1,0 +1,163 @@
+.hb-bg {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    padding: 0 100px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.hb-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.hb-titulo {
+    padding: 20px;
+    text-align: center;
+    font-size: 3.125rem;
+}
+
+
+.informacoes h1 {
+    font-size: 6rem;
+}
+
+.informacoes {
+    padding-top: 110px;
+    text-align: center;
+}
+
+.informacoes p {
+    font-size: 1.5rem;
+    color: #828282;
+
+}
+
+.info-mobile{
+    display: none;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+    color: #828282;
+}
+
+
+.hb-itens {
+    background: #000000;
+    color: #ffffff;
+    width: max-content;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.9rem;
+    border-radius: 6px;
+    box-shadow: 25px 30px 18px -3px rgba(0, 0, 0, 0.1);
+    border: 4px solid transparent;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.info {
+    text-align: center;
+
+}
+
+.hb-itens:hover {
+    border: 4px solid #c9c9c9;
+}
+
+
+
+
+
+@media(max-width:1000px) {
+    .hb-bg {
+        grid-template-columns: 1fr;
+    }
+
+    .hb-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-left: 0 auto;
+    }
+
+    .informacoes h1 {
+        font-size: 2rem;
+    }
+
+    .informacoes p {
+        font-size: 1rem;
+    }
+    .info-mobile{
+        display: block;
+    }
+}
+
+@media(max-width:600px) {
+    .informacoes h1 {
+        font-size: 2rem;
+    }
+
+    .informacoes {
+        padding: 20px;
+    }
+
+    .hb-bg {
+        padding: 0;
+    }
+
+
+.info-mobile{
+    display: none;
+}
+
+
+
+    .hb-grid {
+        margin: 0;
+        overflow-y: scroll;
+        gap: 20px;
+        padding-left: 200px;
+        padding-right: 10px;
+    }
+
+    .informacoes p {
+        font-size: 1rem;
+    }
+
+    .informacoes {
+        max-width: fit-content;
+    }
+
+    .info-mobile{
+        display: block;
+    }
+}
+
+
+
+.js-tabcontent section {
+    display: none;
+}
+
+.js-tabcontent section.ativo {
+    display: block !important;
+    animation: show .6s forwards;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        transform: translate3d( -30px,0,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d( 0,0,0);
+    }
+
+}
