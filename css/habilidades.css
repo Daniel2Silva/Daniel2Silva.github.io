@@ -1,21 +1,26 @@
 .hb-bg {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
-    display: grid;
-    padding: 0 100px;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
     gap: 20px;
     margin-bottom: 100px;
 }
 
 .hb-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    height: 100%;
+    display: flex;
+    align-content: center;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 60px;
 }
 
+.hb-itens{
+    flex: 1;
+    min-width: 220px
+}
 
 .hb-titulo {
     padding: 20px;
@@ -24,11 +29,13 @@
 }
 
 
+
 .informacoes h1 {
     font-size: 6rem;
 }
 
 .informacoes {
+    flex-basis: 50%;
     padding-top: 110px;
     text-align: center;
 }
@@ -76,18 +83,16 @@
 
 
 @media(max-width:1000px) {
-    .hb-bg {
-        grid-template-columns: 1fr;
-    }
-
-    .hb-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        margin-left: 0 auto;
+    .hb-bg{
+        flex-direction: column;
     }
 
     .informacoes h1 {
         font-size: 2rem;
+    }
+
+    .hb-grid{
+        flex-wrap: nowrap;
     }
 
     .informacoes p {
@@ -104,8 +109,8 @@
         font-size: 2rem;
     }
 
-    .informacoes {
-        padding: 20px;
+    .hb-grid{
+        overflow-x: scroll;
     }
 
     .hb-bg {
@@ -116,19 +121,12 @@
     .info-mobile {
         display: none;
     }
-
-
-
-    .hb-grid {
-        overflow: scroll;
-    }
-
     .informacoes p {
         font-size: 1rem;
     }
 
     .informacoes {
-        max-width: fit-content;
+        display: flex;
     }
 
     .info-mobile {
