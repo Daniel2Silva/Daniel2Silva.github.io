@@ -111,6 +111,7 @@
 
     .hb-grid{
         overflow-x: scroll;
+        padding-left: 400px;
     }
 
     .hb-bg {
