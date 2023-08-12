@@ -19,3 +19,11 @@ function Tabnav() {
   }
 }
 Tabnav()
+
+const menumobile = document.getElementById('js-menu');
+
+function ativarMenu(){
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('ativo');
+}
+  menumobile.addEventListener('click', ativarMenu);

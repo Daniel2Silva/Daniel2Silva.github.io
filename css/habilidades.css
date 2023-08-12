@@ -18,7 +18,6 @@
 }
 
 .hb-itens{
-    flex: 1;
     min-width: 220px
 }
 
@@ -87,6 +86,13 @@
         flex-direction: column;
     }
 
+    .informacoes {
+        flex-basis: 50%;
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+
     .informacoes h1 {
         font-size: 2rem;
     }
@@ -108,19 +114,18 @@
     .informacoes h1 {
         font-size: 2rem;
     }
-
+    .hb-titulo{
+        padding: 10px;
+    }
     .hb-grid{
         overflow-x: scroll;
-        padding-left: 400px;
+        padding-left: 310px;
+        gap: 10px;
+        padding-right: 10px;
     }
 
     .hb-bg {
         padding: 0;
-    }
-
-
-    .info-mobile {
-        display: none;
     }
     .informacoes p {
         font-size: 1rem;

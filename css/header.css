@@ -1,10 +1,10 @@
-.header-bg{
+.header-bg {
   color: #000000;
   background: #ffffff;
   position: fixed;
   right: 0px;
   left: 0px;
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),-5px 7px 54px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), -5px 7px 54px 0px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -41,8 +41,6 @@
   border-bottom: #000000 solid 2px;
 }
 
-
-
 .botao {
   border: #000000 solid 1px;
   background: none;
@@ -59,23 +57,53 @@
   transition: .3s;
 }
 
-
+#js-menu{
+  display: none;
+}
 @media(max-width:1000px) {
   .logo {
     font-size: 1.6rem;
   }
-
-  .menu {
-    display: none;
-  }
-
+  
   .botao {
     display: none;
   }
-}
-
-@media(min-width:1000px) {
   .header span {
     display: none;
+  }
+  
+  
+  #js-menu{
+    display: block;
+  }
+  
+    .menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 68px;
+      right: 0px;
+      background: #ffffff;
+      height: 0px;
+      transition: .6s;
+      z-index: 10000;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+
+    .menu a{
+      display: flex;
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, .05); ;
+    }
+    .menu a:hover{
+      border-bottom: 2px solid rgba(0, 0, 0, .05); ;
+    }
+  
+  #nav.ativo .menu{
+    visibility: visible;
+    height: calc(100vw - 70px);
+    overflow-y: auto;
   }
 }
