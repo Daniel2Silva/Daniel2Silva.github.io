@@ -5,7 +5,7 @@
     justify-content: space-between;
     padding: 0 70px;
     gap: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 500px;
 }
 
 .hb-grid {
@@ -17,7 +17,7 @@
     gap: 60px;
 }
 
-.hb-itens{
+.hb-itens {
     min-width: 220px
 }
 
@@ -82,7 +82,7 @@
 
 
 @media(max-width:1000px) {
-    .hb-bg{
+    .hb-bg {
         flex-direction: column;
     }
 
@@ -91,18 +91,18 @@
         padding-top: 20px;
         text-align: center;
     }
-    
+
 
     .informacoes h1 {
         font-size: 2rem;
     }
 
-    .hb-grid{
+    .hb-grid {
         flex-wrap: nowrap;
     }
 
     .informacoes p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .info-mobile {
@@ -114,10 +114,12 @@
     .informacoes h1 {
         font-size: 2rem;
     }
-    .hb-titulo{
+
+    .hb-titulo {
         padding: 10px;
     }
-    .hb-grid{
+
+    .hb-grid {
         overflow-x: scroll;
         padding-left: 310px;
         gap: 10px;
@@ -127,12 +129,10 @@
     .hb-bg {
         padding: 0;
     }
-    .informacoes p {
-        font-size: 1rem;
-    }
 
     .informacoes {
         display: flex;
+        padding: 0 20px;
     }
 
     .info-mobile {

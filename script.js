@@ -18,12 +18,35 @@ function Tabnav() {
     });
   }
 }
-Tabnav()
+Tabnav();
 
-const menumobile = document.getElementById('js-menu');
+function menuMobile() {
+  const menumobile = document.getElementById("js-menu");
 
-function ativarMenu(){
-  const nav = document.getElementById('nav');
-  nav.classList.toggle('ativo');
+  function ativarMenu() {
+    const nav = document.getElementById("nav");
+    nav.classList.toggle("ativo");
+  }
+  menumobile.addEventListener("click", ativarMenu);
+};
+
+menuMobile();
+
+const linksInternos = document.querySelectorAll('.menu a[href^="#"]');
+
+function scrollSuave(event){
+  event.preventDefault();
+  const href = event.currentTarget.getAttribute('href');
+  const section = document.querySelector(href);
+
+  section.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  })
 }
-  menumobile.addEventListener('click', ativarMenu);
+
+linksInternos.forEach((link) => {
+  link.addEventListener('click', scrollSuave);
+});
+
+
